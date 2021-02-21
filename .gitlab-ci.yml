@@ -1,0 +1,6 @@
+deploy:
+  stage: deploy
+  script:
+    - sudo /usr/bin/salt -G role:salt state.apply
+  only:
+    - master
