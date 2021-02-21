@@ -1,3 +1,8 @@
+role:
+  grains.present:
+    - value: postgre_sql
+
+
 Add postgres repo:
   pkgrepo.managed:
     - name: deb http://apt.postgresql.org/pub/repos/apt buster-pgdg main
