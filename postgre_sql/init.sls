@@ -67,10 +67,10 @@ postgresql:
   postgres_user.present:
     - password: {{ db.get('password') }}
   
-  postgres_privileges.present:
-    - object_name: {{ db.get('name') }} 
-    - object_type: database
-    - privileges:
-      - ALL
+#  postgres_privileges.present:
+#    - object_name: {{ db.get('name') }} 
+#    - object_type: database
+#    - privileges:
+#      - ALL
 
 {% endfor %}
